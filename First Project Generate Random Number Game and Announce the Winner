@@ -1,0 +1,23 @@
+import random
+
+Name1= input("Enter First Name")
+Name1RandomNumber=random.randint(0,10)
+
+Name2= input("Enter Second Name")
+Name2RandomNumber=random.randint(0,10)
+
+Name3= input("Enter Third Name")
+Name3RandomNumber=random.randint(0,10)
+
+print(Name1,"got a value:",Name1RandomNumber)
+print(Name2,"got a value:",Name2RandomNumber)
+print(Name3,"got a value:",Name3RandomNumber)
+
+if Name1RandomNumber > Name2RandomNumber > Name3RandomNumber:
+    print(f"Congratulation {Name1} you Won the game." )
+elif Name2RandomNumber > Name3RandomNumber > Name1RandomNumber:
+    print(f"Congratulation {Name2} you Won the game." )
+else:
+    print(f"Congratulation {Name3} you Won the game." )
+
+
